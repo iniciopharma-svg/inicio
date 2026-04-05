@@ -1136,7 +1136,56 @@ button { cursor: pointer; border: none; outline: none; font-family: var(--font-b
 /* ============================================================
    FOOTER
    ============================================================ */
-.footer {
+/* ============================================================
+   VISUAL AID
+   ============================================================ */
+.visual-aid-wrap {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.visual-aid-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-glass);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.visual-aid-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+.visual-aid-viewer {
+  width: 100%;
+  height: 80vh;
+  min-height: 500px;
+  background: #1a1a2e;
+}
+.visual-aid-viewer iframe {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.visual-aid-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 40px;
+}
+
+/* ============================================================
+   FOOTER
   background: var(--bg-secondary);
   border-top: 1px solid var(--border);
   padding: 80px 0 0;
