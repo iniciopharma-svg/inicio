@@ -25,7 +25,7 @@ require_once 'includes/header.php';
           <i class="fa fa-download"></i> Download PDF
         </a>
       </div>
-      <div id="pdf-container" style="background:#1a1a2e;padding:24px;display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div id="pdf-container" style="padding:24px 0;display:flex;flex-direction:column;align-items:center;gap:24px;">
         <p id="pdf-loading" style="color:var(--text-muted);padding:40px;">Loading PDF...</p>
       </div>
     </div>
@@ -48,16 +48,17 @@ require_once 'includes/header.php';
     for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
       pdf.getPage(pageNum).then(function(page) {
         const baseViewport = page.getViewport({ scale: 1 });
-        const scale = Math.max(containerWidth / baseViewport.width, 1.8);
+        const scale = containerWidth / baseViewport.width;
         const viewport = page.getViewport({ scale: scale });
 
         const canvas = document.createElement('canvas');
         canvas.width  = viewport.width;
         canvas.height = viewport.height;
-        canvas.style.width   = '100%';
-        canvas.style.display = 'block';
+        canvas.style.width        = '100%';
+        canvas.style.height       = 'auto';
+        canvas.style.display      = 'block';
         canvas.style.borderRadius = '4px';
-        canvas.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)';
+        canvas.style.boxShadow    = '0 4px 20px rgba(0,0,0,0.4)';
 
         container.appendChild(canvas);
 
