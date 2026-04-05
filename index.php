@@ -45,7 +45,7 @@ require_once 'includes/header.php';
           <div class="hero-stat-label">Years</div>
         </div>
         <div class="hero-stat-item">
-          <div class="hero-stat-num" data-target="10" data-suffix="+">0+</div>
+          <div class="hero-stat-num" data-target="35" data-suffix="+">0+</div>
           <div class="hero-stat-label">Products</div>
         </div>
         <div class="hero-stat-item">
@@ -147,7 +147,7 @@ require_once 'includes/header.php';
       </div>
       <div class="stat-item">
         <span class="stat-icon">💊</span>
-        <div class="stat-number" data-target="10" data-suffix="+">0+</div>
+        <div class="stat-number" data-target="35" data-suffix="+">0+</div>
         <div class="stat-label">Products Available</div>
       </div>
       <div class="stat-item">
