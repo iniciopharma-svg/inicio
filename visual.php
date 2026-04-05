@@ -25,17 +25,49 @@ require_once 'includes/header.php';
           <i class="fa fa-download"></i> Download PDF
         </a>
       </div>
-      <div class="visual-aid-viewer">
-        <iframe
-          src="assets/docs/visual.pdf#view=FitH&scrollbar=1&toolbar=1&navpanes=0"
-          width="100%"
-          height="100%"
-          title="Iniciopharma Visual Aid">
-        </iframe>
+      <div id="pdf-container" style="background:#1a1a2e;padding:24px;display:flex;flex-direction:column;align-items:center;gap:16px;">
+        <p id="pdf-loading" style="color:var(--text-muted);padding:40px;">Loading PDF...</p>
       </div>
     </div>
 
   </div>
 </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+  const container = document.getElementById('pdf-container');
+  const loading   = document.getElementById('pdf-loading');
+
+  pdfjsLib.getDocument('assets/docs/visual.pdf').promise.then(function(pdf) {
+    loading.remove();
+    const totalPages = pdf.numPages;
+
+    for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+      pdf.getPage(pageNum).then(function(page) {
+        const viewport = page.getViewport({ scale: 1.5 });
+
+        const canvas = document.createElement('canvas');
+        canvas.width  = viewport.width;
+        canvas.height = viewport.height;
+        canvas.style.width    = '100%';
+        canvas.style.maxWidth = viewport.width + 'px';
+        canvas.style.display  = 'block';
+        canvas.style.borderRadius = '4px';
+        canvas.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)';
+
+        container.appendChild(canvas);
+
+        page.render({
+          canvasContext: canvas.getContext('2d'),
+          viewport: viewport
+        });
+      });
+    }
+  }).catch(function() {
+    loading.innerHTML = '<i class="fa fa-exclamation-circle" style="color:#ff6b6b;margin-right:8px;"></i>PDF not found. Please upload visual.pdf to assets/docs/';
+  });
+</script>
 
 <?php require_once 'includes/footer.php'; ?>
