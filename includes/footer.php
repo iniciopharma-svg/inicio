@@ -12,7 +12,7 @@
             <span class="navbar-brand-tagline">Healthcare for Every Life</span>
           </div>
         </a>
-        <p>Providing premium quality healthcare solutions at affordable prices. Committed to improving health outcomes across India for over two decades.</p>
+        <p>Providing premium quality healthcare solutions at affordable prices. Committed to improving health outcomes across India for over 4 years.</p>
         <div class="footer-social">
           <a href="https://www.youtube.com/@InicioPharma" target="_blank" class="social-link" title="YouTube">
             <i class="fab fa-youtube"></i>

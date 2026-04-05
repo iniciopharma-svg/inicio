@@ -46,7 +46,7 @@ require_once 'includes/header.php';
           Iniciopharma was born from a realization — that despite India's pharmaceutical industry being one of the largest in the world, millions of patients still struggled to access quality medicines at fair prices.
         </p>
         <p style="font-size:15px; color:var(--text-secondary); line-height:1.9; margin-bottom:20px;">
-          Our founders, with over two decades of hands-on experience in the industry, set out to change this. Starting from Vadodara, Gujarat, we built a company that places patient welfare above everything else.
+          Our founders, with over 4 years of hands-on experience in the industry, set out to change this. Starting from Vadodara, Gujarat, we built a company that places patient welfare above everything else.
         </p>
         <p style="font-size:15px; color:var(--text-secondary); line-height:1.9; margin-bottom:32px;">
           Today, Iniciopharma is a trusted name among healthcare professionals, hospitals, and pharmacies — known for consistent quality, transparent pricing, and reliable supply.

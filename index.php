@@ -344,7 +344,7 @@ require_once 'includes/header.php';
       <div class="about-image-wrap reveal">
         <div class="about-image-box">
           <span class="about-big-icon">🏭</span>
-          <p class="about-image-caption">Founded with a mission to make quality healthcare accessible to all — a trusted pharmaceutical name for over two decades.</p>
+          <p class="about-image-caption">Founded with a mission to make quality healthcare accessible to all — a trusted pharmaceutical name for over 4 years.</p>
           <div style="display:flex;justify-content:center;gap:12px;margin-top:20px;position:relative;z-index:1;flex-wrap:wrap;">
             <span class="tag tag-cyan">GMP Certified</span>
             <span class="tag tag-violet">ISO Compliant</span>
@@ -357,7 +357,7 @@ require_once 'includes/header.php';
         <div class="section-label">Who We Are</div>
         <h2 class="section-title">Committed to <span>Quality</span> Healthcare</h2>
         <p class="section-subtitle" style="margin-bottom:28px;">
-          After two decades in pharmaceuticals, we realized quality medicine at affordable prices is still critical. We exist to change that.
+          After 4 years in pharmaceuticals, we realized quality medicine at affordable prices is still critical. We exist to change that.
         </p>
         <div class="about-features">
           <div class="about-feature">
