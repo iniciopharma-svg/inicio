@@ -36,6 +36,7 @@ require_once 'includes/header.php';
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script>
+  console.log('VISUAL AID VERSION: 2026-04-05-v3');
   pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
   window.addEventListener('load', function() {
