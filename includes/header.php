@@ -49,7 +49,7 @@ if (!isset($page)) $page = '';
       <li><a href="<?php echo isset($base) ? $base : ''; ?>about.php"    class="<?php echo $page === 'about'    ? 'active' : ''; ?>">About Us</a></li>
       <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php" class="<?php echo $page === 'products' ? 'active' : ''; ?>">Products</a></li>
       <li><a href="<?php echo isset($base) ? $base : ''; ?>careers.php"  class="<?php echo $page === 'careers'  ? 'active' : ''; ?>">Careers</a></li>
-      <li><a href="<?php echo isset($base) ? $base : ''; ?>visual.php"   class="<?php echo $page === 'visual'   ? 'active' : ''; ?>">Visual Aid</a></li>
+      <li><a href="<?php echo isset($base) ? $base : ''; ?>assets/docs/visual.pdf" target="_blank">Visual Aid</a></li>
       <li><a href="<?php echo isset($base) ? $base : ''; ?>contact.php"  class="<?php echo $page === 'contact'  ? 'active' : ''; ?>">Contact</a></li>
     </ul>
 
@@ -77,7 +77,7 @@ if (!isset($page)) $page = '';
   <a href="<?php echo isset($base) ? $base : ''; ?>about.php">About Us</a>
   <a href="<?php echo isset($base) ? $base : ''; ?>products.php">Products</a>
   <a href="<?php echo isset($base) ? $base : ''; ?>careers.php">Careers</a>
-  <a href="<?php echo isset($base) ? $base : ''; ?>visual.php">Visual Aid</a>
+  <a href="<?php echo isset($base) ? $base : ''; ?>assets/docs/visual.pdf" target="_blank">Visual Aid</a>
   <a href="<?php echo isset($base) ? $base : ''; ?>contact.php">Contact</a>
   <a href="tel:+917523076895" class="btn btn-primary">
     <i class="fa fa-phone"></i> +91 75230 76895
