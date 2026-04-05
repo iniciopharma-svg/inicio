@@ -53,8 +53,8 @@ require_once 'includes/header.php';
           <div class="hero-stat-label">Therapy Areas</div>
         </div>
         <div class="hero-stat-item">
-          <div class="hero-stat-num" data-target="24" data-suffix="/7">0</div>
-          <div class="hero-stat-label">Support</div>
+          <div class="hero-stat-num" data-target="6" data-suffix=" Days">0</div>
+          <div class="hero-stat-label">Days a Week</div>
         </div>
       </div>
 
@@ -157,8 +157,8 @@ require_once 'includes/header.php';
       </div>
       <div class="stat-item">
         <span class="stat-icon">📞</span>
-        <div class="stat-number" data-target="24" data-suffix="/7">0</div>
-        <div class="stat-label">Customer Support</div>
+        <div class="stat-number" data-target="6" data-suffix=" Days">0</div>
+        <div class="stat-label">Mon–Sat Support</div>
       </div>
     </div>
   </div>
