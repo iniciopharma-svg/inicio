@@ -10,7 +10,7 @@ require_once 'includes/header.php';
   <div class="container">
     <div class="section-label" style="justify-content:center;">Resources</div>
     <h1 class="page-hero-title">Visual <span>Aid</span></h1>
-    <p class="page-hero-sub">Product presentation and reference material for healthcare professionals.sdrtsedrtgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgs</p>
+    <p class="page-hero-sub">Product presentation and reference material for healthcare professionals.</p>
   </div>
 </section>
 
@@ -79,6 +79,5 @@ require_once 'includes/header.php';
     });
   });
 </script>
-askjdhfklajshdjflkajsd;flkjasl;kdfja;lksdaLMKSXDjflkasjdlfkjas;lkdfja;lksdjfl;kasjdfl;kajsd;lkfjasl;kdfjal;ksdjf;olaksdjfl
 
 <?php require_once 'includes/footer.php'; ?>
