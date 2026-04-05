@@ -2104,7 +2104,7 @@ button { cursor: pointer; border: none; outline: none; font-family: var(--font-b
   .about-features           { grid-template-columns: 1fr; gap: 12px; }
   .about-image-box          { padding: 28px 20px; }
   .about-image-wrap         { padding-bottom: 0; }
-  .about-badge              { display: none; }
+  .about-badge              { display: none !important; }
   .about-badge-inline       { display: inline-block; }
 
   /* Why */
