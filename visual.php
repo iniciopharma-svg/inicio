@@ -27,18 +27,10 @@ require_once 'includes/header.php';
       </div>
       <div class="visual-aid-viewer">
         <iframe
-          src="assets/docs/visual.pdf"
+          src="assets/docs/visual.pdf#view=FitH&scrollbar=1&toolbar=1&navpanes=0"
           width="100%"
           height="100%"
-          type="application/pdf"
           title="Iniciopharma Visual Aid">
-          <div class="visual-aid-fallback">
-            <i class="fa fa-file-pdf" style="font-size:48px;color:var(--cyan);margin-bottom:16px;"></i>
-            <p>Your browser cannot display PDFs inline.</p>
-            <a href="assets/docs/visual.pdf" download class="btn btn-primary" style="margin-top:12px;">
-              <i class="fa fa-download"></i> Download PDF
-            </a>
-          </div>
         </iframe>
       </div>
     </div>

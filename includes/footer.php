@@ -37,7 +37,7 @@
           <li><a href="<?php echo isset($base) ? $base : ''; ?>about.php">About Us</a></li>
           <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Our Products</a></li>
           <li><a href="<?php echo isset($base) ? $base : ''; ?>careers.php">Careers</a></li>
-          <li><a href="<?php echo isset($base) ? $base : ''; ?>assets/docs/visual.pdf" target="_blank">Visual Aid</a></li>
+          <li><a href="<?php echo isset($base) ? $base : ''; ?>visual.php">Visual Aid</a></li>
           <li><a href="<?php echo isset($base) ? $base : ''; ?>contact.php">Contact Us</a></li>
         </ul>
       </div>

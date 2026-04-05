@@ -1163,8 +1163,8 @@ button { cursor: pointer; border: none; outline: none; font-family: var(--font-b
 }
 .visual-aid-viewer {
   width: 100%;
-  height: 80vh;
-  min-height: 500px;
+  height: 90vh;
+  min-height: 600px;
   background: #1a1a2e;
 }
 .visual-aid-viewer iframe {
