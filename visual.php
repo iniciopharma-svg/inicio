@@ -25,8 +25,10 @@ require_once 'includes/header.php';
           <i class="fa fa-download"></i> Download PDF
         </a>
       </div>
-      <div id="pdf-container" style="background:#1a1a2e;padding:24px;display:flex;flex-direction:column;align-items:center;gap:16px;">
-        <p id="pdf-loading" style="color:var(--text-muted);padding:40px;">Loading PDF...</p>
+      <div style="background:#1a1a2e;overflow-x:auto;">
+        <div id="pdf-container" style="padding:24px;display:flex;flex-direction:column;align-items:center;gap:16px;min-width:794px;">
+          <p id="pdf-loading" style="color:var(--text-muted);padding:40px;">Loading PDF...</p>
+        </div>
       </div>
     </div>
 
@@ -43,12 +45,13 @@ require_once 'includes/header.php';
   pdfjsLib.getDocument('assets/docs/visual.pdf').promise.then(function(pdf) {
     loading.remove();
     const totalPages = pdf.numPages;
-    const containerWidth = container.offsetWidth - 48;
+    // A4 at 96dpi = 794px wide, use that as fixed render width
+    const A4_WIDTH = 794;
 
     for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
       pdf.getPage(pageNum).then(function(page) {
         const baseViewport = page.getViewport({ scale: 1 });
-        const scale = containerWidth / baseViewport.width;
+        const scale = A4_WIDTH / baseViewport.width;
         const viewport = page.getViewport({ scale: scale });
 
         const canvas = document.createElement('canvas');
