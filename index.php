@@ -41,7 +41,7 @@ require_once 'includes/header.php';
 
       <div class="hero-stats">
         <div class="hero-stat-item">
-          <div class="hero-stat-num" data-target="20" data-suffix="+">0+</div>
+          <div class="hero-stat-num" data-target="4" data-suffix="+">0+</div>
           <div class="hero-stat-label">Years</div>
         </div>
         <div class="hero-stat-item">
@@ -125,7 +125,7 @@ require_once 'includes/header.php';
 <div class="marquee-section">
   <div class="marquee-track">
     <?php
-    $items = ['Gastro & Liver Health','Respiratory Care','Pain Management','Nutritional Supplements','Quality Assured','GMP Certified','ISO Compliant','Affordable Healthcare','20+ Years Experience','Vadodara, Gujarat','Pan India Reach'];
+    $items = ['Gastro & Liver Health','Respiratory Care','Pain Management','Nutritional Supplements','Quality Assured','GMP Certified','ISO Compliant','Affordable Healthcare','4+ Years Experience','Vadodara, Gujarat','Pan India Reach'];
     $all   = array_merge($items, $items);
     foreach ($all as $item):
     ?>
@@ -142,7 +142,7 @@ require_once 'includes/header.php';
     <div class="stats-grid reveal">
       <div class="stat-item">
         <span class="stat-icon">🏆</span>
-        <div class="stat-number" data-target="20" data-suffix="+">0+</div>
+        <div class="stat-number" data-target="4" data-suffix="+">0+</div>
         <div class="stat-label">Years of Excellence</div>
       </div>
       <div class="stat-item">
@@ -348,7 +348,7 @@ require_once 'includes/header.php';
           <div style="display:flex;justify-content:center;gap:12px;margin-top:20px;position:relative;z-index:1;flex-wrap:wrap;">
             <span class="tag tag-cyan">GMP Certified</span>
             <span class="tag tag-violet">ISO Compliant</span>
-            <span class="tag tag-green about-badge-inline">20+ Years of Trust</span>
+            <span class="tag tag-green about-badge-inline">4+ Years of Trust</span>
           </div>
         </div>
       </div>

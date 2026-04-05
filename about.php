@@ -1,7 +1,7 @@
 <?php
 $page       = 'about';
 $page_title = 'About Us';
-$meta_desc  = 'Learn about Iniciopharma — 20+ years of pharmaceutical excellence in Vadodara, Gujarat. Our mission, vision, values, and team.';
+$meta_desc  = 'Learn about Iniciopharma — 4+ years of pharmaceutical excellence in Vadodara, Gujarat. Our mission, vision, values, and team.';
 require_once 'includes/header.php';
 ?>
 
@@ -41,7 +41,7 @@ require_once 'includes/header.php';
     <div class="about-grid" style="margin-bottom: 80px;">
       <div class="reveal">
         <div class="section-label">Our Journey</div>
-        <h2 class="section-title">20+ Years of <span>Pharmaceutical</span> Excellence</h2>
+        <h2 class="section-title">4+ Years of <span>Pharmaceutical</span> Excellence</h2>
         <p style="font-size:15px; color:var(--text-secondary); line-height:1.9; margin-bottom:20px;">
           Iniciopharma was born from a realization — that despite India's pharmaceutical industry being one of the largest in the world, millions of patients still struggled to access quality medicines at fair prices.
         </p>
@@ -64,7 +64,7 @@ require_once 'includes/header.php';
           <div style="position:relative;z-index:1;">
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
               <div style="text-align:center; padding:24px; background:var(--bg-glass); border:1px solid var(--border); border-radius:var(--radius);">
-                <div style="font-family:var(--font-heading); font-size:36px; font-weight:800; color:var(--cyan);">20+</div>
+                <div style="font-family:var(--font-heading); font-size:36px; font-weight:800; color:var(--cyan);">4+</div>
                 <div style="font-size:13px; color:var(--text-muted);">Years in Pharma</div>
               </div>
               <div style="text-align:center; padding:24px; background:var(--bg-glass); border:1px solid var(--border); border-radius:var(--radius);">
