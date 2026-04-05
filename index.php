@@ -351,10 +351,6 @@ require_once 'includes/header.php';
             <span class="tag tag-green about-badge-inline">20+ Years of Trust</span>
           </div>
         </div>
-        <div class="about-badge">
-          <span class="about-badge-num">20+</span>
-          <span class="about-badge-text">Years of Trust</span>
-        </div>
       </div>
 
       <div class="reveal reveal-delay-2">
