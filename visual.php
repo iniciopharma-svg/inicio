@@ -14,20 +14,21 @@ require_once 'includes/header.php';
   </div>
 </section>
 
-<!-- PDF VIEWER -->
+<!-- PDF PAGES -->
 <section class="section" style="padding-top:0;">
   <div class="container">
 
-    <div class="visual-aid-wrap reveal">
-      <div class="visual-aid-toolbar">
-        <span class="visual-aid-title"><i class="fa fa-file-pdf" style="color:var(--cyan);margin-right:8px;"></i>Iniciopharma Visual Aid</span>
-        <a href="assets/docs/visual.pdf" download class="btn btn-outline" style="padding:8px 18px;font-size:13px;">
-          <i class="fa fa-download"></i> Download PDF
-        </a>
-      </div>
-      <div id="pdf-container" style="padding:24px 0;display:flex;flex-direction:column;align-items:center;gap:24px;">
-        <p id="pdf-loading" style="color:var(--text-muted);padding:40px;">Loading PDF...</p>
-      </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px;">
+      <span style="font-family:var(--font-heading);font-weight:600;font-size:15px;color:var(--text-primary);">
+        <i class="fa fa-file-pdf" style="color:var(--cyan);margin-right:8px;"></i>Iniciopharma Visual Aid
+      </span>
+      <a href="assets/docs/visual.pdf" download class="btn btn-outline" style="padding:8px 18px;font-size:13px;">
+        <i class="fa fa-download"></i> Download PDF
+      </a>
+    </div>
+
+    <div id="pdf-container" style="display:flex;flex-direction:column;gap:24px;width:100%;">
+      <p id="pdf-loading" style="color:var(--text-muted);padding:40px;text-align:center;">Loading PDF...</p>
     </div>
 
   </div>
@@ -37,39 +38,44 @@ require_once 'includes/header.php';
 <script>
   pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-  const container = document.getElementById('pdf-container');
-  const loading   = document.getElementById('pdf-loading');
+  window.addEventListener('load', function() {
+    const container = document.getElementById('pdf-container');
+    const loading   = document.getElementById('pdf-loading');
+    const containerWidth = container.getBoundingClientRect().width;
 
-  pdfjsLib.getDocument('assets/docs/visual.pdf').promise.then(function(pdf) {
-    loading.remove();
-    const totalPages = pdf.numPages;
-    const containerWidth = container.offsetWidth - 48;
+    pdfjsLib.getDocument('assets/docs/visual.pdf').promise.then(function(pdf) {
+      loading.remove();
+      const totalPages = pdf.numPages;
+      const renders = [];
 
-    for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
-      pdf.getPage(pageNum).then(function(page) {
-        const baseViewport = page.getViewport({ scale: 1 });
-        const scale = containerWidth / baseViewport.width;
-        const viewport = page.getViewport({ scale: scale });
+      for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+        renders.push(
+          pdf.getPage(pageNum).then(function(page) {
+            const baseViewport = page.getViewport({ scale: 1 });
+            const scale = containerWidth / baseViewport.width;
+            const viewport = page.getViewport({ scale: scale });
 
-        const canvas = document.createElement('canvas');
-        canvas.width  = viewport.width;
-        canvas.height = viewport.height;
-        canvas.style.width        = '100%';
-        canvas.style.height       = 'auto';
-        canvas.style.display      = 'block';
-        canvas.style.borderRadius = '4px';
-        canvas.style.boxShadow    = '0 4px 20px rgba(0,0,0,0.4)';
+            const canvas = document.createElement('canvas');
+            canvas.width  = viewport.width;
+            canvas.height = viewport.height;
+            canvas.style.width   = '100%';
+            canvas.style.display = 'block';
+            canvas.style.borderRadius = '6px';
+            canvas.style.boxShadow = '0 4px 24px rgba(0,0,0,0.5)';
+            canvas.dataset.page = pageNum;
 
-        container.appendChild(canvas);
+            container.appendChild(canvas);
 
-        page.render({
-          canvasContext: canvas.getContext('2d'),
-          viewport: viewport
-        });
-      });
-    }
-  }).catch(function() {
-    loading.innerHTML = '<i class="fa fa-exclamation-circle" style="color:#ff6b6b;margin-right:8px;"></i>PDF not found. Please upload visual.pdf to assets/docs/';
+            return page.render({
+              canvasContext: canvas.getContext('2d'),
+              viewport: viewport
+            }).promise;
+          })
+        );
+      }
+    }).catch(function() {
+      loading.innerHTML = '<i class="fa fa-exclamation-circle" style="color:#ff6b6b;margin-right:8px;"></i>PDF not found. Please upload visual.pdf to assets/docs/';
+    });
   });
 </script>
 
