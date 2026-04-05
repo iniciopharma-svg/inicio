@@ -48,7 +48,7 @@ require_once 'includes/header.php';
     for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
       pdf.getPage(pageNum).then(function(page) {
         const baseViewport = page.getViewport({ scale: 1 });
-        const scale = containerWidth / baseViewport.width;
+        const scale = Math.max(containerWidth / baseViewport.width, 1.8);
         const viewport = page.getViewport({ scale: scale });
 
         const canvas = document.createElement('canvas');
