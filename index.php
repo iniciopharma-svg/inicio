@@ -188,7 +188,7 @@ require_once 'includes/header.php';
 
     <div class="products-grid">
 
-      <div class="product-card reveal reveal-delay-1" data-category="gastro">
+      <a href="products.php" class="product-card reveal reveal-delay-1" data-category="gastro">
         <div class="product-icon-wrap"><img src="assets/images/products/remose-d.png" alt="Remose-D" /></div>
         <div class="product-card-info">
           <span class="product-cat-badge cat-gastro">Gastro</span>
@@ -196,12 +196,12 @@ require_once 'includes/header.php';
           <div class="product-composition">Esomeprazole (E/C) &amp; Domperidone (S/R) Capsules</div>
           <div class="product-card-footer">
             <span><i class="fa fa-tag" style="color:var(--cyan);margin-right:4px;"></i>Rx</span>
-            <a href="products.php">Details →</a>
+            <span>Details →</span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="product-card reveal reveal-delay-2" data-category="respiratory">
+      <a href="products.php" class="product-card reveal reveal-delay-2" data-category="respiratory">
         <div class="product-icon-wrap"><img src="assets/images/products/mubrin-100.png" alt="Mubrin-100" /></div>
         <div class="product-card-info">
           <span class="product-cat-badge cat-resp">Respiratory</span>
@@ -209,12 +209,12 @@ require_once 'includes/header.php';
           <div class="product-composition">Acebrophylline Capsules 100 mg</div>
           <div class="product-card-footer">
             <span><i class="fa fa-tag" style="color:var(--green);margin-right:4px;"></i>Rx</span>
-            <a href="products.php">Details →</a>
+            <span>Details →</span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="product-card reveal reveal-delay-3" data-category="gastro">
+      <a href="products.php" class="product-card reveal reveal-delay-3" data-category="gastro">
         <div class="product-icon-wrap"><img src="assets/images/products/remos-l.png" alt="Remose-L" /></div>
         <div class="product-card-info">
           <span class="product-cat-badge cat-gastro">Gastro</span>
@@ -222,12 +222,12 @@ require_once 'includes/header.php';
           <div class="product-composition">Esomeprazole EC &amp; Levosulpiride SR Capsules</div>
           <div class="product-card-footer">
             <span><i class="fa fa-tag" style="color:var(--cyan);margin-right:4px;"></i>Rx</span>
-            <a href="products.php">Details →</a>
+            <span>Details →</span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="product-card reveal reveal-delay-4" data-category="nutrition">
+      <a href="products.php" class="product-card reveal reveal-delay-4" data-category="nutrition">
         <div class="product-icon-wrap"><img src="assets/images/products/vitamin-d3.png" alt="Vitamin D3" /></div>
         <div class="product-card-info">
           <span class="product-cat-badge cat-nutrition">Nutrition</span>
@@ -235,12 +235,12 @@ require_once 'includes/header.php';
           <div class="product-composition">Cholecalciferol Oral Solution</div>
           <div class="product-card-footer">
             <span><i class="fa fa-tag" style="color:var(--violet);margin-right:4px;"></i>OTC</span>
-            <a href="products.php">Details →</a>
+            <span>Details →</span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="product-card reveal reveal-delay-1" data-category="gastro">
+      <a href="products.php" class="product-card reveal reveal-delay-1" data-category="gastro">
         <div class="product-icon-wrap"><img src="assets/images/products/remose-40.png" alt="Remose-40" /></div>
         <div class="product-card-info">
           <span class="product-cat-badge cat-gastro">Gastro</span>
@@ -248,12 +248,12 @@ require_once 'includes/header.php';
           <div class="product-composition">Pantoprazole Tablets 40 mg</div>
           <div class="product-card-footer">
             <span><i class="fa fa-tag" style="color:var(--cyan);margin-right:4px;"></i>Rx</span>
-            <a href="products.php">Details →</a>
+            <span>Details →</span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="product-card reveal reveal-delay-2" data-category="pain">
+      <a href="products.php" class="product-card reveal reveal-delay-2" data-category="pain">
         <div class="product-icon-wrap"><img src="assets/images/products/fevedol-mf.png" alt="Fevedol-MF" /></div>
         <div class="product-card-info">
           <span class="product-cat-badge cat-pain">Pain &amp; Fever</span>
@@ -261,10 +261,10 @@ require_once 'includes/header.php';
           <div class="product-composition">Paracetamol &amp; Ibuprofen Suspension</div>
           <div class="product-card-footer">
             <span><i class="fa fa-tag" style="color:#ff6b35;margin-right:4px;"></i>OTC</span>
-            <a href="products.php">Details →</a>
+            <span>Details →</span>
           </div>
         </div>
-      </div>
+      </a>
 
     </div>
   </div>

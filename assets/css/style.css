@@ -807,6 +807,9 @@ button { cursor: pointer; border: none; outline: none; font-family: var(--font-b
 }
 
 .product-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
