@@ -87,7 +87,7 @@
             <div class="footer-contact-icon"><i class="fa fa-clock"></i></div>
             <div>
               <div class="footer-contact-label">Working Hours</div>
-              <div class="footer-contact-value">Mon–Sat: 9:00 AM – 6:00 PM<br><span style="color:var(--cyan);">24/7 Free Call Service</span></div>
+              <div class="footer-contact-value">Mon–Sat: 9:00 AM – 6:00 PM</div>
             </div>
           </div>
         </div>

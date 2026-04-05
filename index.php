@@ -440,8 +440,8 @@ require_once 'includes/header.php';
       </div>
       <div class="why-card reveal reveal-delay-3">
         <span class="why-card-icon">📞</span>
-        <h4 class="why-card-title">24/7 Support</h4>
-        <p class="why-card-desc">Round-the-clock assistance for healthcare professionals and partners.</p>
+        <h4 class="why-card-title">Dedicated Support</h4>
+        <p class="why-card-desc">Responsive assistance for healthcare professionals and partners during business hours.</p>
       </div>
     </div>
   </div>

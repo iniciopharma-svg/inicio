@@ -41,7 +41,7 @@ require_once 'includes/header.php';
     </div>
     <div class="section-label" style="justify-content:center;">Get In Touch</div>
     <h1 class="page-hero-title">Contact <span>Us</span></h1>
-    <p class="page-hero-sub">Have a question, need product information, or want to explore a partnership? We're here for you — 24/7.</p>
+    <p class="page-hero-sub">Have a question, need product information, or want to explore a partnership? We're here for you.</p>
   </div>
 </section>
 

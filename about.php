@@ -76,7 +76,7 @@ require_once 'includes/header.php';
                 <div style="font-size:13px; color:var(--text-muted);">Therapy Areas</div>
               </div>
               <div style="text-align:center; padding:24px; background:var(--bg-glass); border:1px solid var(--border); border-radius:var(--radius);">
-                <div style="font-family:var(--font-heading); font-size:36px; font-weight:800; color:var(--cyan);">24/7</div>
+                <div style="font-family:var(--font-heading); font-size:36px; font-weight:800; color:var(--cyan);">Mon–Sat</div>
                 <div style="font-size:13px; color:var(--text-muted);">Support</div>
               </div>
             </div>
