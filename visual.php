@@ -43,17 +43,19 @@ require_once 'includes/header.php';
   pdfjsLib.getDocument('assets/docs/visual.pdf').promise.then(function(pdf) {
     loading.remove();
     const totalPages = pdf.numPages;
+    const containerWidth = container.offsetWidth - 48;
 
     for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
       pdf.getPage(pageNum).then(function(page) {
-        const viewport = page.getViewport({ scale: 1.5 });
+        const baseViewport = page.getViewport({ scale: 1 });
+        const scale = containerWidth / baseViewport.width;
+        const viewport = page.getViewport({ scale: scale });
 
         const canvas = document.createElement('canvas');
         canvas.width  = viewport.width;
         canvas.height = viewport.height;
-        canvas.style.width    = '100%';
-        canvas.style.maxWidth = viewport.width + 'px';
-        canvas.style.display  = 'block';
+        canvas.style.width   = '100%';
+        canvas.style.display = 'block';
         canvas.style.borderRadius = '4px';
         canvas.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)';
 
