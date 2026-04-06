@@ -42,21 +42,7 @@
         </ul>
       </div>
 
-      <!-- Products -->
-      <div>
-        <h4 class="footer-col-title">Our Products</h4>
-        <ul class="footer-links">
-          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Remose-D</a></li>
-          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Remose-L</a></li>
-          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Remose-40</a></li>
-          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Mubrin-100</a></li>
-          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Fevedol-MF</a></li>
-          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Vitamin D3</a></li>
-          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Skal-Up Syrup</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
+<!-- Contact -->
       <div>
         <h4 class="footer-col-title">Contact Info</h4>
         <div class="footer-contact">
