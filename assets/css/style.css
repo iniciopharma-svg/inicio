@@ -1193,7 +1193,7 @@ button { cursor: pointer; border: none; outline: none; font-family: var(--font-b
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1.5fr;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
   gap: 48px;
   padding-bottom: 60px;
 }

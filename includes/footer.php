@@ -42,7 +42,19 @@
         </ul>
       </div>
 
-<!-- Contact -->
+      <!-- Therapy Areas -->
+      <div>
+        <h4 class="footer-col-title">Therapy Areas</h4>
+        <ul class="footer-links">
+          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Gastro &amp; Liver Health</a></li>
+          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Respiratory Care</a></li>
+          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Pain &amp; Fever Management</a></li>
+          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Nutritional Supplements</a></li>
+          <li><a href="<?php echo isset($base) ? $base : ''; ?>products.php">Vitamins &amp; Minerals</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
       <div>
         <h4 class="footer-col-title">Contact Info</h4>
         <div class="footer-contact">
